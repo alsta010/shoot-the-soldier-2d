@@ -7,6 +7,10 @@ func _ready() -> void:
 
 func _ready2() -> void:
 	pass
+	
+func _ready3() -> void:
+	pass
+	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
