@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://0usbxopdemfj"]
+
+[node name="Main Menu" type="Node2D" unique_id=1363664140]
+
+[node name="Button_manager" type="Control" parent="." unique_id=977176862]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Start" type="Button" parent="Button_manager" unique_id=1504811362]
+layout_mode = 0
+offset_left = 440.0
+offset_top = 292.0
+offset_right = 741.0
+offset_bottom = 366.0
+text = "Start spillet"
+
+[node name="Options" type="Button" parent="Button_manager" unique_id=1121783093]
+layout_mode = 0
+offset_left = 442.0
+offset_top = 404.0
+offset_right = 744.0
+offset_bottom = 476.0
+text = "Innstillinger"
+
+[node name="Quit" type="Button" parent="Button_manager" unique_id=1744363913]
+layout_mode = 0
+offset_left = 444.0
+offset_top = 509.0
+offset_right = 748.0
+offset_bottom = 582.0
+text = "Slutt spillet"
