@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://0usbxopdemfj"]
 
 [ext_resource type="Script" uid="uid://bk2vfvtt20uj7" path="res://main_menu.gd" id="1_06t4h"]
+[ext_resource type="PackedScene" uid="uid://d3p5nhfarq5c8" path="res://fade_transition.tscn" id="2_7vrkn"]
 
 [node name="Main Menu" type="Node2D" unique_id=1363664140]
 script = ExtResource("1_06t4h")
@@ -32,6 +33,12 @@ offset_top = 509.0
 offset_right = 748.0
 offset_bottom = 582.0
 
+[node name="Fade_transition" parent="." unique_id=102544464 instance=ExtResource("2_7vrkn")]
+visible = false
+
+[node name="fade_timer" type="Timer" parent="Fade_transition" unique_id=1833358508]
+
 [connection signal="pressed" from="Button_manager/Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="Button_manager/Options" to="." method="_on_options_pressed"]
 [connection signal="pressed" from="Button_manager/Quit" to="." method="_on_quit_pressed"]
+[connection signal="timeout" from="Fade_transition/fade_timer" to="." method="_on_fade_timer_timeout"]
