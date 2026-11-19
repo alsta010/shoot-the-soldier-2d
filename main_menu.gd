@@ -5,7 +5,7 @@ var button_type = null
 func _on_start_pressed() -> void:
 	button_type = "start"
 	$Fade_transition.show()
-	$Fade_transition/Fade_timer.start()
+	$Fade_transition/fade_timer.start()
 	$Fade_transition/AnimationPlayer.play("fade_in")
 
 
