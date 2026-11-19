@@ -1,7 +1,15 @@
 [gd_scene format=3 uid="uid://0usbxopdemfj"]
 
 [ext_resource type="Script" uid="uid://bk2vfvtt20uj7" path="res://main_menu.gd" id="1_06t4h"]
+[ext_resource type="Texture2D" uid="uid://bi27exysducah" path="res://pictures/backround.png" id="2_0o4t1"]
 [ext_resource type="PackedScene" uid="uid://d3p5nhfarq5c8" path="res://fade_transition.tscn" id="2_7vrkn"]
+[ext_resource type="Texture2D" uid="uid://ckgww20o20sux" path="res://pictures/start.png" id="2_fu7sn"]
+[ext_resource type="Texture2D" uid="uid://c2jnetq53hwro" path="res://pictures/logo.png" id="3_0k4wn"]
+[ext_resource type="Texture2D" uid="uid://ckbgv7bhgahof" path="res://pictures/start1.png" id="3_8qtwp"]
+[ext_resource type="Texture2D" uid="uid://chtapc1hsc6cq" path="res://pictures/Innstillinger.png" id="3_glbon"]
+[ext_resource type="Texture2D" uid="uid://bo0fp51y6o51y" path="res://pictures/Avslutt.png" id="4_nlkkf"]
+[ext_resource type="Texture2D" uid="uid://bw1otom2yp3xr" path="res://pictures/Innstillinger1.png" id="5_dy7ct"]
+[ext_resource type="Texture2D" uid="uid://bh85pk66nyl2o" path="res://pictures/Avslutt1.png" id="7_0o4t1"]
 
 [node name="Main Menu" type="Node2D" unique_id=1363664140]
 script = ExtResource("1_06t4h")
@@ -12,26 +20,46 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
+[node name="Sprite2D" type="Sprite2D" parent="Button_manager" unique_id=530096594]
+position = Vector2(576, 323.99997)
+scale = Vector2(1.6225352, 0.917847)
+texture = ExtResource("2_0o4t1")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Button_manager" unique_id=261488268]
+position = Vector2(582, 135.99997)
+scale = Vector2(0.33449814, 0.3372877)
+texture = ExtResource("3_0k4wn")
+
 [node name="Start" type="TextureButton" parent="Button_manager" unique_id=337066148]
+z_as_relative = false
 layout_mode = 0
-offset_left = 440.0
-offset_top = 292.0
-offset_right = 741.0
-offset_bottom = 366.0
+offset_left = 461.0
+offset_top = 253.0
+offset_right = 1106.0
+offset_bottom = 485.0
+scale = Vector2(0.4, 0.4)
+texture_normal = ExtResource("2_fu7sn")
+texture_hover = ExtResource("3_8qtwp")
 
 [node name="Options" type="TextureButton" parent="Button_manager" unique_id=76949020]
 layout_mode = 0
-offset_left = 442.0
-offset_top = 404.0
-offset_right = 744.0
-offset_bottom = 476.0
+offset_left = 461.0
+offset_top = 362.0
+offset_right = 1107.0
+offset_bottom = 592.0
+scale = Vector2(0.4, 0.4)
+texture_normal = ExtResource("3_glbon")
+texture_hover = ExtResource("5_dy7ct")
 
 [node name="Quit" type="TextureButton" parent="Button_manager" unique_id=1402320217]
 layout_mode = 0
-offset_left = 444.0
-offset_top = 509.0
-offset_right = 748.0
-offset_bottom = 582.0
+offset_left = 461.0
+offset_top = 471.0
+offset_right = 1109.0
+offset_bottom = 698.0
+scale = Vector2(0.4, 0.4)
+texture_normal = ExtResource("4_nlkkf")
+texture_hover = ExtResource("7_0o4t1")
 
 [node name="Fade_transition" parent="." unique_id=102544464 instance=ExtResource("2_7vrkn")]
 visible = false
