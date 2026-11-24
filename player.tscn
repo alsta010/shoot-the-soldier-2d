@@ -25,12 +25,13 @@ scale = Vector2(0.34289256, 0.31823394)
 texture = ExtResource("1_onrkg")
 
 [node name="Dead" type="Sprite2D" parent="Graphics" unique_id=1604577589]
-visible = false
 z_index = -1
+position = Vector2(-1.9999962, 2.000002)
+scale = Vector2(0.24674483, 0.2543945)
 texture = ExtResource("2_i3pqv")
 
 [node name="RayCast2D" type="RayCast2D" parent="." unique_id=1355287828]
-target_position = Vector2(0, 320)
+target_position = Vector2(0, -324)
 collision_mask = 3
 
 [node name="DeathSound" type="AudioStreamPlayer2D" parent="." unique_id=1331623828]
