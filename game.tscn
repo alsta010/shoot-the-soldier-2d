@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://bkeug3s7dcn2j" path="res://game.gd" id="1_e2o6t"]
 [ext_resource type="PackedScene" uid="uid://d3p5nhfarq5c8" path="res://fade_transition.tscn" id="2_feb5d"]
 [ext_resource type="Texture2D" uid="uid://cm1wix7y2mpk7" path="res://Tileset/2DPIXX - Free Topdown Shooter - Environment - City.png" id="3_feb5d"]
+[ext_resource type="PackedScene" uid="uid://cs6aa3b4lauvk" path="res://player.tscn" id="4_fc0e3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fc0e3"]
 texture = ExtResource("3_feb5d")
@@ -452,3 +453,6 @@ tile_map_data = PackedByteArray("AAAAAAQAAQARABIAAAABAAQAAQARABIAAAACAAQAAQARABI
 tile_set = SubResource("TileSet_51c44")
 
 [node name="World" type="Node2D" parent="." unique_id=995039557]
+
+[node name="Player" parent="." unique_id=2068424103 instance=ExtResource("4_fc0e3")]
+position = Vector2(335, 251)

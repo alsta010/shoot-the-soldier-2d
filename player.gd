@@ -25,7 +25,7 @@ func _physics_process(delta):
 	velocity = move_dir * move_speed
 	move_and_slide()
 	
-	func kill():
+func kill():
 		if dead:
 			return
 		dead = true
@@ -33,9 +33,15 @@ func _physics_process(delta):
 		$Graphics/Dead.show()
 		$Graphics/Alive.hide()
 		$CanvasLayer/DeathScreen.show()
+		z_index = -1
 	
 func restart():
 	get_tree().reload_current_scene()
 	
 func shoot():
-	pass
+	$MuzzleFlash.show()
+	$MuzzleFlash/Timer.start()
+	$ShootSound.play()
+	if ray_cast_2d.is_colliding() and ray_cast_2d.get_collider().had_method("kill"):
+		ray_cast_2d.get_collider().kill()
+		
