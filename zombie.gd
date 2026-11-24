@@ -29,4 +29,9 @@ func kill():
 		$Graphics/Alive.hide()
 		$CollisionShape2D.disabled = true 
 		z_index = 10
-	
+		
+		remove_from_group("enemies")
+
+		if get_tree().get_nodes_in_group("enemies").is_empty():
+			await get_tree().create_timer(10.0).timeout
+			get_tree().change_scene_to_file("res://main_menu.tscn")

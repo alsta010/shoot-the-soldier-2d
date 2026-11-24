@@ -456,31 +456,51 @@ tile_set = SubResource("TileSet_51c44")
 [node name="World" type="Node2D" parent="." unique_id=995039557]
 
 [node name="Player" parent="." unique_id=2068424103 instance=ExtResource("4_fc0e3")]
-position = Vector2(335, 251)
+position = Vector2(437, 323)
 
 [node name="Zombie" parent="." unique_id=1753821560 instance=ExtResource("5_7jktm")]
-position = Vector2(-3, 85)
 
-[node name="Zombie2" parent="." unique_id=429105977 instance=ExtResource("5_7jktm")]
-position = Vector2(692, 87)
+[node name="Zombie2" parent="." unique_id=1603477424 instance=ExtResource("5_7jktm")]
+position = Vector2(-569, 322)
 
-[node name="Zombie3" parent="." unique_id=1434147788 instance=ExtResource("5_7jktm")]
-position = Vector2(717, 429)
+[node name="Zombie3" parent="." unique_id=408442677 instance=ExtResource("5_7jktm")]
+position = Vector2(824, -564)
 
-[node name="Zombie4" parent="." unique_id=985493420 instance=ExtResource("5_7jktm")]
-position = Vector2(-26, 448)
+[node name="Zombie4" parent="." unique_id=1681316335 instance=ExtResource("5_7jktm")]
+position = Vector2(-466, -654)
 
-[node name="Zombie5" parent="." unique_id=706226590 instance=ExtResource("5_7jktm")]
-position = Vector2(354, 770)
+[node name="Zombie5" parent="." unique_id=2028232739 instance=ExtResource("5_7jktm")]
+position = Vector2(1645, 1169)
 
-[node name="Zombie9" parent="." unique_id=878404943 instance=ExtResource("5_7jktm")]
-position = Vector2(354, 770)
+[node name="Zombie6" parent="." unique_id=1434813710 instance=ExtResource("5_7jktm")]
+position = Vector2(-842, 1323)
 
-[node name="Zombie6" parent="." unique_id=1215319902 instance=ExtResource("5_7jktm")]
-position = Vector2(1073, 277)
+[node name="Zombie7" parent="." unique_id=1903118914 instance=ExtResource("5_7jktm")]
+position = Vector2(788, 1265)
 
-[node name="Zombie7" parent="." unique_id=1430299916 instance=ExtResource("5_7jktm")]
-position = Vector2(344, -229)
+[node name="Zombie8" parent="." unique_id=1979840849 instance=ExtResource("5_7jktm")]
+position = Vector2(1754, 196)
 
-[node name="Zombie8" parent="." unique_id=163919131 instance=ExtResource("5_7jktm")]
-position = Vector2(-470, 288)
+[node name="Zombie9" parent="." unique_id=634822223 instance=ExtResource("5_7jktm")]
+position = Vector2(1699, -991)
+
+[node name="Zombie10" parent="." unique_id=453985787 instance=ExtResource("5_7jktm")]
+position = Vector2(471, -1336)
+
+[node name="Zombie11" parent="." unique_id=780458803 instance=ExtResource("5_7jktm")]
+position = Vector2(-847, -1414)
+
+[node name="Zombie12" parent="." unique_id=1181332799 instance=ExtResource("5_7jktm")]
+position = Vector2(1349, -1453)
+
+[node name="Zombie13" parent="." unique_id=624052482 instance=ExtResource("5_7jktm")]
+position = Vector2(2243, -480)
+
+[node name="Zombie14" parent="." unique_id=855259218 instance=ExtResource("5_7jktm")]
+position = Vector2(-1185, -225)
+
+[node name="Zombie15" parent="." unique_id=1791213117 instance=ExtResource("5_7jktm")]
+position = Vector2(-116, 1418)
+
+[node name="Zombie16" parent="." unique_id=852398590 instance=ExtResource("5_7jktm")]
+position = Vector2(2101, 1606)
