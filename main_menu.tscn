@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://ckbgv7bhgahof" path="res://pictures/start1.png" id="3_8qtwp"]
 [ext_resource type="Texture2D" uid="uid://bo0fp51y6o51y" path="res://pictures/Avslutt.png" id="4_nlkkf"]
 [ext_resource type="Texture2D" uid="uid://bh85pk66nyl2o" path="res://pictures/Avslutt1.png" id="7_0o4t1"]
+[ext_resource type="AudioStream" uid="uid://dcwo6la7cmt37" path="res://Music/Menu.mp3" id="9_dy7ct"]
 
 [node name="Main Menu" type="Node2D" unique_id=1363664140]
 script = ExtResource("1_06t4h")
@@ -53,6 +54,10 @@ texture_hover = ExtResource("7_0o4t1")
 visible = false
 
 [node name="fade_timer" type="Timer" parent="Fade_transition" unique_id=1833358508]
+
+[node name="BackgroundMusic" type="AudioStreamPlayer" parent="." unique_id=1207551954]
+stream = ExtResource("9_dy7ct")
+autoplay = true
 
 [connection signal="pressed" from="Button_manager/Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="Button_manager/Quit" to="." method="_on_quit_pressed"]

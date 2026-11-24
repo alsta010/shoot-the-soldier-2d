@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://cm1wix7y2mpk7" path="res://Tileset/2DPIXX - Free Topdown Shooter - Environment - City.png" id="3_feb5d"]
 [ext_resource type="PackedScene" uid="uid://cs6aa3b4lauvk" path="res://player.tscn" id="4_fc0e3"]
 [ext_resource type="PackedScene" uid="uid://cdgkr6d47d8pw" path="res://zombie.tscn" id="5_7jktm"]
+[ext_resource type="AudioStream" uid="uid://c5bjwd2v6kvg4" path="res://Music/INgame.mp3" id="6_ryrav"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fc0e3"]
 texture = ExtResource("3_feb5d")
@@ -504,3 +505,7 @@ position = Vector2(-116, 1418)
 
 [node name="Zombie16" parent="." unique_id=852398590 instance=ExtResource("5_7jktm")]
 position = Vector2(2101, 1606)
+
+[node name="BackgroundMusic" type="AudioStreamPlayer" parent="." unique_id=834875892]
+stream = ExtResource("6_ryrav")
+autoplay = true
