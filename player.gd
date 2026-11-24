@@ -33,7 +33,7 @@ func kill():
 		$Graphics/Dead.show()
 		$Graphics/Alive.hide()
 		$CanvasLayer/DeathScreen.show()
-		z_index = -1
+		z_index = 10
 	
 func restart():
 	get_tree().reload_current_scene()
@@ -42,6 +42,6 @@ func shoot():
 	$MuzzleFlash.show()
 	$MuzzleFlash/Timer.start()
 	$ShootSound.play()
-	if ray_cast_2d.is_colliding() and ray_cast_2d.get_collider().had_method("kill"):
+	if ray_cast_2d.is_colliding() and ray_cast_2d.get_collider().has_method("kill"):
 		ray_cast_2d.get_collider().kill()
 		
