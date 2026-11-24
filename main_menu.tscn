@@ -6,9 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://ckgww20o20sux" path="res://pictures/start.png" id="2_fu7sn"]
 [ext_resource type="Texture2D" uid="uid://c2jnetq53hwro" path="res://pictures/logo.png" id="3_0k4wn"]
 [ext_resource type="Texture2D" uid="uid://ckbgv7bhgahof" path="res://pictures/start1.png" id="3_8qtwp"]
-[ext_resource type="Texture2D" uid="uid://chtapc1hsc6cq" path="res://pictures/Innstillinger.png" id="3_glbon"]
 [ext_resource type="Texture2D" uid="uid://bo0fp51y6o51y" path="res://pictures/Avslutt.png" id="4_nlkkf"]
-[ext_resource type="Texture2D" uid="uid://bw1otom2yp3xr" path="res://pictures/Innstillinger1.png" id="5_dy7ct"]
 [ext_resource type="Texture2D" uid="uid://bh85pk66nyl2o" path="res://pictures/Avslutt1.png" id="7_0o4t1"]
 
 [node name="Main Menu" type="Node2D" unique_id=1363664140]
@@ -41,22 +39,12 @@ scale = Vector2(0.4, 0.4)
 texture_normal = ExtResource("2_fu7sn")
 texture_hover = ExtResource("3_8qtwp")
 
-[node name="Options" type="TextureButton" parent="Button_manager" unique_id=76949020]
-layout_mode = 0
-offset_left = 461.0
-offset_top = 362.0
-offset_right = 1107.0
-offset_bottom = 592.0
-scale = Vector2(0.4, 0.4)
-texture_normal = ExtResource("3_glbon")
-texture_hover = ExtResource("5_dy7ct")
-
 [node name="Quit" type="TextureButton" parent="Button_manager" unique_id=1402320217]
 layout_mode = 0
-offset_left = 461.0
-offset_top = 471.0
-offset_right = 1109.0
-offset_bottom = 698.0
+offset_left = 462.0
+offset_top = 357.0
+offset_right = 1110.0
+offset_bottom = 584.0
 scale = Vector2(0.4, 0.4)
 texture_normal = ExtResource("4_nlkkf")
 texture_hover = ExtResource("7_0o4t1")
@@ -67,6 +55,5 @@ visible = false
 [node name="fade_timer" type="Timer" parent="Fade_transition" unique_id=1833358508]
 
 [connection signal="pressed" from="Button_manager/Start" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="Button_manager/Options" to="." method="_on_options_pressed"]
 [connection signal="pressed" from="Button_manager/Quit" to="." method="_on_quit_pressed"]
 [connection signal="timeout" from="Fade_transition/fade_timer" to="." method="_on_fade_timer_timeout"]

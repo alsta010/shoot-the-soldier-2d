@@ -31,7 +31,7 @@ scale = Vector2(0.24674483, 0.2543945)
 texture = ExtResource("2_i3pqv")
 
 [node name="RayCast2D" type="RayCast2D" parent="." unique_id=1355287828]
-target_position = Vector2(0, -324)
+target_position = Vector2(0, -600)
 collision_mask = 3
 
 [node name="DeathSound" type="AudioStreamPlayer2D" parent="." unique_id=1331623828]
@@ -97,7 +97,7 @@ offset_right = 38.0
 offset_bottom = 56.0
 grow_horizontal = 2
 theme_override_font_sizes/font_size = 28
-text = "You Died!"
+text = "Du døde!"
 
 [node name="Button" type="Button" parent="CanvasLayer/DeathScreen/Panel" unique_id=645703337]
 layout_mode = 1
