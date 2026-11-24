@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://d3p5nhfarq5c8" path="res://fade_transition.tscn" id="2_feb5d"]
 [ext_resource type="Texture2D" uid="uid://cm1wix7y2mpk7" path="res://Tileset/2DPIXX - Free Topdown Shooter - Environment - City.png" id="3_feb5d"]
 [ext_resource type="PackedScene" uid="uid://cs6aa3b4lauvk" path="res://player.tscn" id="4_fc0e3"]
+[ext_resource type="PackedScene" uid="uid://cdgkr6d47d8pw" path="res://zombie.tscn" id="5_7jktm"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fc0e3"]
 texture = ExtResource("3_feb5d")
@@ -456,3 +457,30 @@ tile_set = SubResource("TileSet_51c44")
 
 [node name="Player" parent="." unique_id=2068424103 instance=ExtResource("4_fc0e3")]
 position = Vector2(335, 251)
+
+[node name="Zombie" parent="." unique_id=1753821560 instance=ExtResource("5_7jktm")]
+position = Vector2(-3, 85)
+
+[node name="Zombie2" parent="." unique_id=429105977 instance=ExtResource("5_7jktm")]
+position = Vector2(692, 87)
+
+[node name="Zombie3" parent="." unique_id=1434147788 instance=ExtResource("5_7jktm")]
+position = Vector2(717, 429)
+
+[node name="Zombie4" parent="." unique_id=985493420 instance=ExtResource("5_7jktm")]
+position = Vector2(-26, 448)
+
+[node name="Zombie5" parent="." unique_id=706226590 instance=ExtResource("5_7jktm")]
+position = Vector2(354, 770)
+
+[node name="Zombie9" parent="." unique_id=878404943 instance=ExtResource("5_7jktm")]
+position = Vector2(354, 770)
+
+[node name="Zombie6" parent="." unique_id=1215319902 instance=ExtResource("5_7jktm")]
+position = Vector2(1073, 277)
+
+[node name="Zombie7" parent="." unique_id=1430299916 instance=ExtResource("5_7jktm")]
+position = Vector2(344, -229)
+
+[node name="Zombie8" parent="." unique_id=163919131 instance=ExtResource("5_7jktm")]
+position = Vector2(-470, 288)
