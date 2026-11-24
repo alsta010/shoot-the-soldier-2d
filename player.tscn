@@ -10,6 +10,7 @@ radius = 64.00781
 
 [node name="Player" type="CharacterBody2D" unique_id=2068424103 groups=["player"]]
 script = ExtResource("1_hqtel")
+move_speed = null
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1064203532]
 shape = SubResource("CircleShape2D_qlk0m")
@@ -112,3 +113,4 @@ text = "Restart"
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1623297974]
 
 [connection signal="timeout" from="MuzzleFlash/Timer" to="MuzzleFlash" method="hide"]
+[connection signal="button_up" from="CanvasLayer/DeathScreen/Panel/Button" to="." method="restart"]
