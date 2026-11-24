@@ -1,3 +1,35 @@
 [gd_scene format=3 uid="uid://cdgkr6d47d8pw"]
 
+[ext_resource type="Script" uid="uid://bj8nqoo2bayyy" path="res://zombie.gd" id="1_eseir"]
+[ext_resource type="Texture2D" uid="uid://bf0tju0n41ql1" path="res://pictures/enemy (1).png" id="1_roy8y"]
+[ext_resource type="Texture2D" uid="uid://d0lk1tjmt1qwg" path="res://pictures/dead soldier.png" id="2_jmu02"]
+[ext_resource type="AudioStream" uid="uid://dkjwnkcwpvoxa" path="res://Sounds/death sound 1 .mp3" id="4_7nqyo"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_eseir"]
+radius = 68.0
+
 [node name="Zombie" type="CharacterBody2D" unique_id=1753821560]
+script = ExtResource("1_eseir")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1727747248]
+shape = SubResource("CircleShape2D_eseir")
+
+[node name="Graphics" type="Node2D" parent="." unique_id=1953185662]
+
+[node name="Alive" type="Sprite2D" parent="Graphics" unique_id=2057340104]
+position = Vector2(2.9999998, -18)
+rotation = 3.1415927
+scale = Vector2(0.19764842, 0.20814988)
+texture = ExtResource("1_roy8y")
+
+[node name="Dead" type="Sprite2D" parent="Graphics" unique_id=175837532]
+z_index = -1
+scale = Vector2(0.2906901, 0.2944336)
+texture = ExtResource("2_jmu02")
+
+[node name="RayCast2D" type="RayCast2D" parent="." unique_id=1924945508]
+target_position = Vector2(0, -70)
+
+[node name="DeathSound" type="AudioStreamPlayer2D" parent="." unique_id=861392158]
+stream = ExtResource("4_7nqyo")
+bus = &"sfx"
