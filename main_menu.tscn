@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://0usbxopdemfj"]
 
 [ext_resource type="Script" uid="uid://bk2vfvtt20uj7" path="res://main_menu.gd" id="1_06t4h"]
-[ext_resource type="Texture2D" uid="uid://bi27exysducah" path="res://pictures/backround.png" id="2_0o4t1"]
+[ext_resource type="Texture2D" uid="uid://0p765006jef0" path="res://pictures/fon .png" id="2_0o4t1"]
 [ext_resource type="PackedScene" uid="uid://d3p5nhfarq5c8" path="res://fade_transition.tscn" id="2_7vrkn"]
 [ext_resource type="Texture2D" uid="uid://ckgww20o20sux" path="res://pictures/start.png" id="2_fu7sn"]
 [ext_resource type="Texture2D" uid="uid://c2jnetq53hwro" path="res://pictures/logo.png" id="3_0k4wn"]
@@ -21,8 +21,8 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="Sprite2D" type="Sprite2D" parent="Button_manager" unique_id=530096594]
-position = Vector2(576, 323.99997)
-scale = Vector2(1.6225352, 0.917847)
+position = Vector2(576.00006, 324)
+scale = Vector2(0.68899524, 0.68862903)
 texture = ExtResource("2_0o4t1")
 
 [node name="Sprite2D2" type="Sprite2D" parent="Button_manager" unique_id=261488268]
