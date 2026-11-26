@@ -28,7 +28,7 @@ func kill():
 		$Graphics/Dead.show()
 		$Graphics/Alive.hide()
 		$CollisionShape2D.disabled = true 
-		z_index = 10
+		$Graphics/Dead.visible = true
 		
 		remove_from_group("enemies")
 

@@ -33,7 +33,7 @@ func kill():
 		$Graphics/Dead.show()
 		$Graphics/Alive.hide()
 		$CanvasLayer/DeathScreen.show()
-		z_index = 10
+		$Graphics/Dead.visible = true
 	
 func restart():
 	get_tree().reload_current_scene()

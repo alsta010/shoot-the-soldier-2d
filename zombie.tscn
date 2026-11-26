@@ -23,7 +23,9 @@ scale = Vector2(0.19764842, 0.20814988)
 texture = ExtResource("1_roy8y")
 
 [node name="Dead" type="Sprite2D" parent="Graphics" unique_id=175837532]
+visible = false
 z_index = -1
+z_as_relative = false
 scale = Vector2(0.2906901, 0.2944336)
 texture = ExtResource("2_jmu02")
 
